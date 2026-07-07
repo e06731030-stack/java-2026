@@ -13,12 +13,13 @@ public class ListaNotas {
 
         System.out.println("cuantas notas deseas ingresar");
         cantidadNotas = entradaDatos.nextInt();
+
         for (int iterador = 0; iterador < cantidadNotas; iterador++){
             System.out.println("ingrese la nota: "+ (iterador + 1));
             int nota =  entradaDatos.nextInt();
             notas.add(nota);
-
         }
+
         System.out.println("mostrando notas");
         for(int iterador = 0; iterador < notas.size(); iterador++) {
             System.out.println("la nota " + (iterador +1) +"es"+ notas.get(iterador));
